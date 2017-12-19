@@ -8,7 +8,7 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
       ssh \
     && rm -rf /var/lib/apt/lists/*
 
-ENV HADOOP_VERSION 2.7.3
+ENV HADOOP_VERSION 3.0.0
 ENV HADOOP_PREFIX /opt/hadoop-${HADOOP_VERSION}
 ENV HADOOP_CONF_DIR ${HADOOP_PREFIX}/etc/hadoop
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
